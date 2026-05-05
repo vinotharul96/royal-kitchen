@@ -23,7 +23,7 @@ const ContextProvider = ({children}) => {
     var [ productID, setProductID ] = useState('')
 
 
-    const url = 'http://localhost:5000'
+    const url = import.meta.env.VITE_API_URL || 'http://localhost:5000'
 
 
     const productAddFun = async (e) => {

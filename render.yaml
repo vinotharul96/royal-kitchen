@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: royal-kitchen-backend
+    env: node
+    rootDir: BACKEND
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: MONGO_URL
+        sync: false # User will need to provide this in Render dashboard

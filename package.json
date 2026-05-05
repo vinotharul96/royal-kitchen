@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "build": "npm run build --prefix FRONTEND",
     "dev": "concurrently \"npm run dev --prefix BACKEND\" \"npm run dev --prefix FRONTEND\""
   },
   "dependencies": {

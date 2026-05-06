@@ -7,11 +7,7 @@ const app = express()
 const cors = require('cors')
 
 // ✅ CORS CONFIG (IMPORTANT)
-app.use(cors({
-    origin: "https://royalkitchendot.netlify.app",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true
-}))
+app.use(cors())
 
 // ✅ Handle preflight requests
 app.options('*', cors())

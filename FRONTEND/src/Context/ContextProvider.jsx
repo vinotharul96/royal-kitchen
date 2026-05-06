@@ -9,7 +9,7 @@ const ContextProvider = ({ children }) => {
 
   const navigate = useNavigate();
   
-  const url = import.meta.env.VITE_API_URL || "https://kitchen-backend.netlify.app"; 
+  const url = import.meta.env.VITE_API_URL || "https://royal-kitchen-backend.onrender.com"; 
 
   
   const [productData, setProductData] = useState([]);

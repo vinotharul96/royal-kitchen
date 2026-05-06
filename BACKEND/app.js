@@ -6,11 +6,8 @@ const app = express()
 
 const cors = require('cors')
 
-// ✅ CORS CONFIG (IMPORTANT)
+// ✅ Enough for CORS
 app.use(cors())
-
-// ✅ Handle preflight requests
-app.options('*', cors())
 
 app.use(express.json({ limit : '50mb' }))
 

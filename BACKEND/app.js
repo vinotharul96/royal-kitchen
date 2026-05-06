@@ -7,7 +7,11 @@ const app = express()
 app.use(express.json({ limit : '50mb' }))
 
 const cors = require('cors')
-app.use(cors())
+app.use(cors({
+    origin: "https://royalkitchendot.netlify.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+}))
 
 const productRouter = require("./routers/productRouter");
 app.use('/product',productRouter)
